@@ -8,11 +8,11 @@ const router = express.Router();
 
 config({ path: "./config.env" });
 
-console.log("FRONTEND_URL:", "http://localhost:5173");
+console.log("FRONTEND_URL:", "https://wrk-it.netlify.app");
 app.use(
   cors({
     origin: [
-      "http://localhost:5173" 
+      "https://wrk-it.netlify.app" 
     ],
     methods: ["POST"],
     credentials: true,
