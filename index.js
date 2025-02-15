@@ -8,11 +8,11 @@ const router = express.Router();
 
 config({ path: "./config.env" });
 
-console.log("FRONTEND_URL:", process.env.FRONTEND_URL);
+console.log("FRONTEND_URL:", "http://localhost:5173");
 app.use(
   cors({
     origin: [
-      process.env.FRONTEND_URL || "http://localhost:5173" 
+      "http://localhost:5173" 
     ],
     methods: ["POST"],
     credentials: true,
